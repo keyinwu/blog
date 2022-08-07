@@ -10,10 +10,10 @@ description: "Computer Graphics | Programming Self-Study"
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: {{ site.baseurl }}/images/avatar.jpg
+avatar: # {{ site.baseurl }}/images/avatar.jpg
 # https://avatars.githubusercontent.com/u/43900343?v=4
 # 64px × 64px recommended
-favicon: {{ site.baseurl }}/images/favicon.ico
+favicon: # {{ site.baseurl }}/images/favicon.ico
 
 
 navigation:
