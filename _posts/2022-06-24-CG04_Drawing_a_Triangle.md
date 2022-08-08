@@ -8,15 +8,12 @@ author: keyinwu
 ---
 
 
-## Two major techniques 
+Two major techniques for "getting stuff on the screen"
 
-for "getting stuff on the screen"
 - Rasterization
 - Ray tracing
 
-## Pipeline(s)
-
-- inputs -> stages -> outputs
+Pipeline(s): inputs -> stages -> outputs
 
 ## Rasterization Pipeline
 
@@ -49,9 +46,10 @@ for "getting stuff on the screen"
 - Challenges in computer graphics
   - often not band-limited
   - infinite extent of "ideal" reconstruction filter (sinc) is impractical for efficient implementations.
-- Aliasing artifacts in images  
-  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/aliasing_artifacts.jpeg" width="80%"/>
-  - moiré pattern
+- Aliasing artifacts in images   
+  - moiré pattern    
+  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/aliasing_artifacts.jpeg" width="70%"/>
+  
 
 ## Reduce Aliasing
 
@@ -78,17 +76,17 @@ for "getting stuff on the screen"
 - Evaluate coverage(x,y) for a triangle
   - **Point-in-triangle test** (LA)
   - Traditional approach: incremental traversal  
-    - <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/incremental_traversal.jpeg" width="50%"/>
+    <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/incremental_traversal.jpeg" width="50%"/>
     - also visits pixels in an order that improves memory coherence: backtrack, zig-zag, Hilbert/Morton curves...
   - Modern approach: parallel coverage tests
     - modern hardware is highly parallel
     - test all samples in triangle "bounding box" in parallel
     - can be very wasteful in some cases
   - Hybrid approach: tiled triangle traversal
-    - <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/tiled_triangle_traversal.jpeg" width="50%"/>
+    <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/tiled_triangle_traversal.jpeg" width="50%"/>
     - Idea: work "coarse to fine"
   - Hierarchical strategies  
-    - <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/hierarchical_strategies.jpeg" width="80%"/>
+    <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/hierarchical_strategies.jpeg" width="80%"/>
     - recursive coarse to fine
 
 <!-- ## **Occlusion**
