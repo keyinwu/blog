@@ -17,8 +17,8 @@ favicon: https://raw.githubusercontent.com/keyinwu/blog/main/images/favicon.ico
 navigation:
   - name: Blog
     url: /
-  # - name: About
-  #   url: /about
+  - name: About
+    url: https://www.keyinw.site/#about_me
   - name: Archive
     url: /archive
   - name: Tags

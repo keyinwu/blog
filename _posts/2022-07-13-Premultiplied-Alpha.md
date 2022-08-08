@@ -60,3 +60,17 @@ Final Color:
 5. Fits naturally into rasterization pipeline (as homogeneous coordinates)
 
 > Closed: if taking two elements of the set and applying the operation on them always yields an element within that set
+
+
+## OpenGL Examples
+
+Most Common:
+```c++
+glEnable(GL_BLEND);
+glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+```
+
+With premultiplied alpha
+```c++
+glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+```
