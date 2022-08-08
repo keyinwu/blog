@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CG004: Drawing a Triangle"
+title: "CG04 Drawing a Triangle"
 date:   2022-06-24
 tags: [lecture notes, computer graphics]
 comments: false
