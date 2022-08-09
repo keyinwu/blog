@@ -60,7 +60,7 @@ disqus: # fromendworld
 gitalk:
   clientID: 4eb3ad2e5798e27b38f7
   clientSecret: b3b0c93cc48b16f0b1575e44a1525049208a115e
-  repo: keyinwu.github.io
+  repo: blog
   owner: keyinwu
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
