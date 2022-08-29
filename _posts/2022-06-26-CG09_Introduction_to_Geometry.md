@@ -49,7 +49,7 @@ author: keyinwu
 ## Blobby Surfaces (Implicit)
 
 - Instead of Booleans, gradually blend surfaces together
-- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/blobby_surfaces.png" width="70%"/>
+- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/blobby_surfaces.jpeg" width="70%"/>
 
 ## Blending Distance Functions (Implicit)
 
@@ -63,7 +63,7 @@ min(d1(x), d2(x)) (get zeros on both shapes)
 
 ## Level Set Methods (Implicit)
 
-- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/level_set_methods.png" width="70%"/>
+- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/level_set_methods.jpeg" width="70%"/>
 - Level Sets from Medical Data (CT, MRI, etc.)
 - Level Sets in Physical Simulation: [encodes distance to air-liquid boundary](http://physbam.stanford.edu)
 - Level Set Storage
@@ -76,7 +76,7 @@ min(d1(x), d2(x)) (get zeros on both shapes)
 - new "language" for describing natural phenomena
 - hard to control shape
 - Mandelbrot Set  
-  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/mandelbrot_set.png" width="70%"/>
+  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/mandelbrot_set.jpeg" width="70%"/>
   - Can color according to how quickly each point diverges/converges.
 - [Iterated Function Systems](http://electricsheep.org)
 
@@ -104,16 +104,16 @@ min(d1(x), d2(x)) (get zeros on both shapes)
 ## Bézier Curves (Explicit)
 
 - Bernstein Basis  
-  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/bernstein_basis.png" width="70%"/>
+  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/bernstein_basis.jpeg" width="70%"/>
 - A Bézier curve is a curve expressed in the Bernstein basis  
-  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/bezier_curves.png" width="70%"/>
+  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/bezier_curves.jpeg" width="70%"/>
 - High-degree Bernstein polynomials don't interpolate well (ex. n=10)
 
 ## Piecewise Bézier Curves (Explicit)
 
 - -->Alternative idea: piece together many Bézier curves
 - Widely-used technique (Illustrator, fonts, SVG, etc.)
-- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/piecewise_bezier_curves.png" width="70%"/>
+- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/piecewise_bezier_curves.jpeg" width="70%"/>
 - Tangent Continuity
   - want endpoints of each segment to meet
   - want tangents at endpoints to meet
@@ -128,7 +128,7 @@ min(d1(x), d2(x)) (get zeros on both shapes)
   - Can use a pair of curves to get a surface
   - Tensor Product: Value at any point (u,v) given by product of a curve f at u and a curve g at v
 - Bézier Patches  
-  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/bezier_patches.png" width="70%"/>
+  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/bezier_patches.jpeg" width="70%"/>
   - Bézier patch is sum of (tensor) products of Bernstein bases
 - Bézier Surface
   - connect Bézier patches to get a surface
@@ -136,7 +136,7 @@ min(d1(x), d2(x)) (get zeros on both shapes)
   - Tangent continuity (Think: how many constraints? How many degrees of freedom?)
   - To make interesting shapes (with good continuity), need patches that allow more interesting connectivity (not only 4)
 - Spline patch schemes  
-  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/spline_patch.png" width="70%"/>
+  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/spline_patch.jpeg" width="70%"/>
 
 ## Rational B-Splines (Explicit)
 
@@ -153,7 +153,7 @@ min(d1(x), d2(x)) (get zeros on both shapes)
 
 ## NUBS Surface (Explicit)
 
-- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/nubs_surface.png" width="70%"/>
+- <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/nubs_surface.jpeg" width="70%"/>
 
 ## Subdivision Surfaces (Explicit)
 
@@ -168,7 +168,7 @@ min(d1(x), d2(x)) (get zeros on both shapes)
     - e.g., k = 2, (1,2,1) get weights (1/4,1/2,1/4)
     - limit is B-spline of degree k + 1
 - Subdivision Surfaces
-  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/subdivision_surfaces.png" width="70%"/>
+  <img src="https://github.com/keyinwu/blog/raw/main/images/ComputerGraphics/subdivision_surfaces.jpeg" width="70%"/>
 
 
 ## Summary
