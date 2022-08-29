@@ -11,7 +11,7 @@ When setting up Gitalk, I came across `Gitalk Error: Validation Failed`, and the
 is `Request failed with status code 422`. It took me a while to go through related issues on Gitalk repo. Here, I 
 would like to summarize things I tried and summarize possible solutions that can help with this case.
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Gitalk/validation_failed.jpeg" width="55%"/>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Gitalk/validation_failed.jpeg" width="70%"/>
 
 
 ## 1. Account Intialization

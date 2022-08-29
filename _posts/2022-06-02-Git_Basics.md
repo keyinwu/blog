@@ -7,9 +7,8 @@ comments: false
 author: keyinwu
 ---
 
-## Git Intro
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Others/git_command.jpeg" width="70%"/>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Others/git_command.jpeg" width="55%"/>
 
 ## Configuration
 
