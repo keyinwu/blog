@@ -3,7 +3,7 @@ layout: post
 title: "Summary of Gitalk Error: Validation Failed"
 date:   2022-08-08
 tags: [debug log]
-comments: false
+comments: true
 author: keyinwu
 ---
 
@@ -11,7 +11,7 @@ When setting up Gitalk, I came across `Gitalk Error: Validation Failed`, and the
 is `Request failed with status code 422`. It took me a while to go through related issues on Gitalk repo. Here, I 
 would like to summarize things I tried and summarize possible solutions that can help with this case.
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Gitalk/validation_failed.jpeg" width="70%"/>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Gitalk/validation_failed.jpeg" width="55%"/>
 
 
 ## 1. Account Intialization
@@ -19,7 +19,7 @@ would like to summarize things I tried and summarize possible solutions that can
 First, you should check if you are logged in to your GitHub account on your blog site. It requires your login to initialize, 
 and you should see a similar authorization window like this:
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Gitalk/authorize.jpeg" width="70%"/>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Gitalk/authorize.jpeg" width="55%"/>
 
 
 ## 2. Length of Title
