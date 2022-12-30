@@ -17,7 +17,7 @@ Automatically generate normals.
 
 Add texture coordinates and tangents.
 
-*Learning Notes from Catlike Coding Tutorials*
+**Learning Notes from [Catlike Coding Tutorials](https://catlikecoding.com/)*
 
 
 ## Creating the Mesh
@@ -28,8 +28,7 @@ Add texture coordinates and tangents.
 	private IEnumerator Generate () {
 		WaitForSeconds wait = new WaitForSeconds(0.05f);
 		
-    // Define Mesh
-		GetComponent<MeshFilter>().mesh = mesh = new Mesh();
+		GetComponent<MeshFilter>().mesh = mesh = new Mesh(); // Define Mesh
 		mesh.name = "Procedural Grid";
 
 		vertices = new Vector3[(xSize + 1) * (ySize + 1)];
@@ -39,8 +38,7 @@ Add texture coordinates and tangents.
 				yield return wait;
 			}
 		}
-    // Define Mesh Vertices
-		mesh.vertices = vertices;
+		mesh.vertices = vertices; // Define Mesh Vertices
 	}
 ```
 
@@ -58,8 +56,7 @@ Which side a triangle is visible from is determined by the orientation of its ve
 		triangles[3] = triangles[2] = 1;
 		triangles[4] = triangles[1] = xSize + 1;
 		triangles[5] = xSize + 2;
-    // Define Mesh Triangles
-		mesh.triangles = triangles;
+		mesh.triangles = triangles; // Define Mesh Triangles
 	}
 ```
 
@@ -104,8 +101,7 @@ Which side a triangle is visible from is determined by the orientation of its ve
 Normals are defined per vertex. The default normal direction is (0, 0, 1). The Mesh.RecalculateNormals method computes the normal of each vertex by figuring out which triangles connect with that vertex, determining the normals of those flat triangles, averaging them, and normalizing the result.
 
 ```c#
-  // Define Mesh Normals
-  mesh.RecalculateNormals();
+  mesh.RecalculateNormals(); // Define Mesh Normals
 ```
 
 ### Texture
@@ -117,8 +113,7 @@ UV Coordinates
   ...
     uv[i] = new Vector2((float)x / xSize, (float)y / ySize); // use float
   ...
-  // Define Mesh UV
-  mesh.uv = uv;
+  mesh.uv = uv; // Define Mesh UV
 ```
 
 Tiling Settings
@@ -140,8 +135,7 @@ The cross product of them yields the third direction needed to define 3D space. 
   ...
     tangents[i] = tangent;
   ...
-  // Define Mesh Tagents
-  mesh.tangents = tangents;
+  mesh.tangents = tangents; // Define Mesh Tagents
 ```
 
 <img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-tagent-space.jpeg" width="50%" style="display: block; margin: auto"/>

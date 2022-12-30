@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unity C# Scripting Tips"
-date:   2022-12-30
+date:   2022-12-08
 tags: [unity C#]
 comments: false
 author: keyinwu
@@ -9,7 +9,7 @@ author: keyinwu
 
 - Automatic Component Dependencies
 - OnDrawGizmos()
-- tbc
+- ...tbc
 
 ## Automatic Component Dependencies
 
