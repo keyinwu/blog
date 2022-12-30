@@ -7,6 +7,18 @@ comments: false
 author: keyinwu
 ---
 
+Create a grid of points.
+
+Use a coroutine to analyze their placement.
+
+Define a surface with triangles.
+
+Automatically generate normals.
+
+Add texture coordinates and tangents.
+
+*Learning Notes from Catlike Coding Tutorials*
+
 
 ## Creating the Mesh
 
@@ -34,12 +46,12 @@ author: keyinwu
 
 Which side a triangle is visible from is determined by the orientation of its vertex indices. By default, if they are arranged in a **clockwise** direction the triangle is considered to be **forward-facing and visible**. Counter-clockwise triangles are discarded so we don't need to spend time rendering the insides of objects, which are typically not meant to be seen anyway.
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-triangle-sides.jpeg" width="50%"/>
-<em>The two sides of a triangle</em>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-triangle-sides.jpeg" width="50%" style="display: block; margin: auto"/>
+<p style="text-align: center; font-style: italic;">The two sides of a triangle</p>
 
 ```c#
   private IEnumerator Generate () {
-		…
+		...
 
 		int[] triangles = new int[6];
 		triangles[0] = 0;
@@ -51,8 +63,8 @@ Which side a triangle is visible from is determined by the orientation of its ve
 	}
 ```
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-quad.jpeg" width="30%"/>
-<figcaption>A quad made with two triangles</figcaption>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-quad.jpeg" width="30%" style="display: block; margin: auto"/>
+<p style="text-align: center; font-style: italic;">A quad made with two triangles</p>
 
 ### Mesh Code
 ```c#
@@ -111,8 +123,8 @@ UV Coordinates
 
 Tiling Settings
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-uv-tiling.jpg" width="70%"/>
-<figcaption>Correct UV coordinates, tiling 1,1 vs. 2,1</figcaption>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-uv-tiling.jpg" width="70%" style="display: block; margin: auto"/>
+<p style="text-align: center; font-style: italic;">Correct UV coordinates, tiling 1,1 vs. 2,1</p>
 
 The texture's wrap mode: **clamp** or **repeat**. By settings tiling to (2, 1) the U coordinates will be doubled. If the texture is set to repeat, then we'll see two square tiles of it.
 
@@ -132,5 +144,5 @@ The cross product of them yields the third direction needed to define 3D space. 
   mesh.tangents = tangents;
 ```
 
-<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-tagent-space.jpeg" width="30%"/>
-<figcaption>Tagent Space</figcaption>
+<img src="https://github.com/keyinwu/blog/raw/main/images/Unity/pg-tagent-space.jpeg" width="50%" style="display: block; margin: auto"/>
+<p style="text-align: center; font-style: italic;">Tagent Space</p>
