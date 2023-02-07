@@ -10,7 +10,7 @@ permalink: /tags/
 
 <div class="tags">
   <ul class="label">
-    {% for tag in site.tags %}
+    {% for tag in site.tags reversed %}
     <li>
       <a href="#{{ tag[0] }}">
         <span>{{ tag[0] }}</span>

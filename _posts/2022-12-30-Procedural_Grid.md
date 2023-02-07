@@ -7,15 +7,15 @@ comments: false
 author: keyinwu
 ---
 
-Create a grid of points.
-
-Use a coroutine to analyze their placement.
-
-Define a surface with triangles.
-
-Automatically generate normals.
-
-Add texture coordinates and tangents.
+> Create a grid of points.
+> 
+> Use a coroutine to analyze their placement.
+> 
+> Define a surface with triangles.
+> 
+> Automatically generate normals.
+> 
+> Add texture coordinates and tangents.
 
 **Learning Notes from [Catlike Coding Tutorials](https://catlikecoding.com/)*
 
